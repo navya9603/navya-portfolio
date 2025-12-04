@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navya | Automation Developer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0d0d0d;
+            color: #eaeaea;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* HEADER */
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(90deg, #7f5eff, #0ff);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
+        /* PHOTO CARD */
+        .photo-card {
+            width: 260px;
+            height: 330px;
+            margin: 30px auto;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            animation: float 4s ease-in-out infinite;
+            box-shadow: 0 0 20px #7f5eff;
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+            background: linear-gradient(90deg, #0ff, #7f5eff);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        /* SKILLS */
+        .skills span {
+            background: #1a1a1a;
+            padding: 10px 15px;
+            border-radius: 6px;
+            color: #0ff;
+            margin: 8px;
+            display: inline-block;
+            border: 1px solid #333;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .skills span:hover {
+            transform: scale(1.12);
+            border-color: #7f5eff;
+            color: #7f5eff;
+        }
+
+        /* SERVICES SECTION */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            border-color: #0ff;
+            box-shadow: 0 0 15px #0ff3;
+        }
+
+        /* PROJECTS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            transition: 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: #7f5eff;
+            box-shadow: 0 0 15px #7f5eff33;
+        }
+
+        .project-card h3 {
+            color: #7f5eff;
+            margin-bottom: 10px;
+        }
+
+        /* CONTACT */
+        .contact a {
+            color: #0ff;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .contact a:hover {
+            color: #7f5eff;
+        }
+
+        /* CTA Button */
+        .btn {
+            background: linear-gradient(90deg, #7f5eff, #0ff);
+            padding: 12px 25px;
+            border-radius: 30px;
+            color: #000;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #888;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Navya Mallapuram</h1>
+    <p>Automation Developer | n8n Workflows | API Integrations | WhatsApp Automation</p>
+
+    <div class="photo-card">
+        <img src="your-image.jpg" alt="Navya Photo">
+    </div>
+
+    <a href="mailto:mallapuramnavya@gmail.com" class="btn">Hire Me</a>
+</header>
+
+<section class="section">
+    <h2>About Me</h2>
+    <p>
+        I’m an Automation Developer who builds powerful workflow automations using 
+        <strong>n8n, API integrations, WhatsApp Cloud API, Google Sheets, Telegram bots, and AI-based workflows</strong>.
+        I specialize in creating “set it & forget it” automation systems that help businesses save time and increase productivity.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>n8n</span>
+        <span>API Integrations</span>
+        <span>Webhooks</span>
+        <span>Google Sheets API</span>
+        <span>WhatsApp Cloud API</span>
+        <span>Telegram Bot API</span>
+        <span>JavaScript (Logic Nodes)</span>
+        <span>PDF Automation</span>
+        <span>Automation System Design</span>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Services</h2>
+    <div class="services">
+        
+        <div class="service-card">
+            <h3>⚙️ Build n8n Workflows</h3>
+            <p>Custom workflow automation for any business process — fast, stable, and fully documented.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>💬 WhatsApp Automation</h3>
+            <p>Automated WhatsApp Cloud API workflows for leads, notifications, and customer support.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>📊 Google Sheets Automation</h3>
+            <p>Data entry, reporting, notifications & integrations with Sheets API.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>🤖 Telegram Bot Workflows</h3>
+            <p>Set up auto-replies, data storing, and admin notifications using Telegram Bot API.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>📌 Google Sheets Automation</h3>
+            <p>Automated data collection, processing, and email notifications using n8n.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>📌 WhatsApp Cloud API Workflow</h3>
+            <p>Lead notifications, alerts, and message automation with Meta API.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>📌 Telegram Bot Automation</h3>
+            <p>Bot messages → database → admin alerts pipeline.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>📌 Automated PDF Report System</h3>
+            <p>Dynamic HTML → PDF conversion and email delivery automation.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mallapuramnavya@gmail.com">mallapuramnavya@gmail.com</a></p>
+    <p>Location: Hyderabad, India</p>
+</section>
+
+<footer>
+    © 2025 Navya | Automation Developer Portfolio (n8n, API, Automation)
+</footer>
+
+</body>
+</html>

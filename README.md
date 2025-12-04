@@ -134,7 +134,6 @@ Developed a full lead automation system where form submissions trigger multiple 
 If you want to collaborate or need automation support:
 
 📧 Email: **mallapuramnavya@gmail.com**  
-🔗 LinkedIn: *(Add your LinkedIn link)*  
 🌍 Location: Hyderabad, India  
 
 ---
